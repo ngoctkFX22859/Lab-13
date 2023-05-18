@@ -16,84 +16,90 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">Carousel</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mn-2 mb-md-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Link</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">Carousel</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mn-2 mb-md-0">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <div class="carousel-inner">
-      <div class="carousel-item active bg-img1">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline</h1>
-            <p>Some representative placeholder content for the first slide of the carousel</p>
-            <p><a href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-img1">
+          <img src="abstract-technology-banner-background.jpg" style="width: 100%" />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline</h1>
+              <p>Some representative placeholder content for the first slide of the carousel</p>
+              <p><a href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="carousel-item bg-img2">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel</p>
-            <p><a href="#" class="btn btn-lg btn-primary">Learn more</a></p>
+        <div class="carousel-item bg-img2">
+          <img src="Banner-Mobile-Cho-Canh.jpg" style="width: 100%" />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel</p>
+              <p><a href="#" class="btn btn-lg btn-primary">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-img3">
+          <img src="download.jpeg" style="width: 100%" />
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure</h1>
+              <p>Some representative placeholder content for the third slide of the carousel</p>
+              <p><a href="#" class="btn btn-lg btn-primary">Browse gallery</a></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item bg-img3">
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure</h1>
-            <p>Some representative placeholder content for the third slide of the carousel</p>
-            <p><a href="#" class="btn btn-lg btn-primary">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="active" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide-to="prev">
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide-to="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
